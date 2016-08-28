@@ -4,7 +4,7 @@
 
         $http.get("/api/livro")
               .success(function (data) {
-                  $scope.livros = data;
+                  $scope.livro = data;
               });
     };
 

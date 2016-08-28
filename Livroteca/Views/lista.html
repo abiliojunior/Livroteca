@@ -1,0 +1,13 @@
+﻿<div ng-app="livroteca" ng-controller="listaController">
+    <table class="table">
+        <tr>
+            <th>Título</th>
+        </tr>
+        <tr ng-repeat="livro in livros">
+            <td>{{livro.Titulo}}</td>
+            <td>
+                <a href="/Cliente/html/detalhes/{{livro.Id}}">Detalhes</a>
+            </td>
+        </tr>
+    </table>
+</div>

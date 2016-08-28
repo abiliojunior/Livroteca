@@ -1,25 +1,17 @@
-﻿<div class="jumbotron">
+﻿<div class="well">
     <h4>Filmoteca Abilio Junior</h4>
 </div>
-<div ng-app="livroteca" ng-controller="listaController">
-    
-    <table class="table">
-        <tr>
-            <th>Título</th>
-            <th>Ano de Lançamento</th>
-            <th>Paginas</th>
-        </tr>
-        <tr ng-repeat="livro in livros">
-            <td>{{livro.Titulo}}</td>
-            <td>{{livro.AnoLancamento}}</td>
-            <td>{{livro.NumeroDePaginas}}</td>
-        </tr>
-    </table>
+
+<div data-ng-app="livroteca">
+    NgView aqui.
+    <ng-view> </ng-view>
 </div>
 
 @section scripts
 {
     <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
     <script src="~/AngularApp/js/Livroteca.js"></script>
     <script src="~/AngularApp/js/listaController.js"></script>
+    <script src="~/AngularApp/js/detalhesController.js"></script>
 }
