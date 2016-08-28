@@ -9,7 +9,7 @@ namespace Livroteca.Models
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
-        public string Anolancamento { get; set; }
+        public int AnoLancamento { get; set; }
         public int NumeroDePaginas { get; set; }
 
     }

@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace Livroteca.Models
 {
-    public class LivroDb
+    public class LivroDb:DbContext
     {
         public DbSet<Livro> Livros { get; set; }
 
